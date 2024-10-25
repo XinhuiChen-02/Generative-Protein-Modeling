@@ -14,11 +14,11 @@ Comprehensive Survey](https://arxiv.org/submit/5950681/view) has accepted by **F
 
 ___
 ## Task-oriented Classification
->**Sequence-based Protein Design**: Focuses on generating novel protein sequences by learning from the vast space of amino-acid sequences, incorporating both unconstrained and constrained design scenarios (functional/structural requirements).
+>**Sequence-based Protein Design**: Tasks that learn evolutionary relationships of protein sequences in multidimensional amino acid sequence space and generates new sequences, with or without functional/structural constraints, aiming to produce novel sequences with desired properties while satisfying given constraints.
 >
->**Structure-based Protein Design**: Focuses on leveraging structural information for protein sequence prediction and design through various sophisticated approaches.
+>**Structure-based Protein Design**: Tasks that predict or generate protein sequences based on structural information, which can be either full sequence generation or sequence segment completion (inpainting), aiming to find amino acid sequences that match the given structural constraints.
 >
->**Joint Sequence-structure Generation**: Focuses on leveraging structural information for protein sequence prediction and design. 
+>**Joint Sequence-structure Generation**: Tasks that simultaneously generate protein sequences and structures as paired outputs to ensure their compatibility, which are essential for maintaining functional and structural correctness, particularly crucial in applications such as de novo design and drug discovery.
 
 **Sequence-based Protein Design Models**
 | Publication  | Venue | Year | Resource |
