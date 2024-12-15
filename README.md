@@ -1,6 +1,6 @@
 # Generative-Protein-Modeling 
 
-A systematic survey of **generative approaches in protein engineering**, organized through two fundamental taxonomies: **(1) task-oriented classification** - including ***sequence-based generation***, ***structure-based generation***, and ***joint sequence-structure generation***; **(2) inference framework classification** - with particular focus on ***autoregressive models*** and ***diffusion models*** that have demonstrated remarkable progress in this domain. This survey provides a comprehensive analysis of state-of-the-art generative methods, offering detailed examination of their theoretical foundations, architectural innovations, and practical applications in protein design and engineering, supported by extensive research papers, implementations, and benchmarks.
+A systematic survey of **generative approaches in protein engineering**, organized through two fundamental taxonomies: **(1) task-oriented taxonomy** - including ***sequence-constrained generation***, ***structure-constrained generation***, and ***joint sequence-structure generation***; **(2) inference framework taxonomy** - with particular focus on ***autoregressive models*** and ***diffusion models*** that have demonstrated remarkable progress in this domain. This survey provides a comprehensive analysis of state-of-the-art generative methods, offering detailed examination of their theoretical foundations, architectural innovations, and practical applications in protein design and engineering, supported by extensive research papers, implementations, and benchmarks.
 
 **OPEN TO COLLABORATION! If you have any new insights in any relevant research direction or just want to chat, please drop us an email (xinhuichen.be@gmail.com).**
 
@@ -8,19 +8,19 @@ A systematic survey of **generative approaches in protein engineering**, organiz
 Comprehensive Survey](https://arxiv.org/submit/5950681/view) has accepted by **FM2Science workshop, NeurIPS 2024 (Oral)**, which synthesizes recent advances in generative modeling approaches for protein engineering and provides a systematic categorization of existing methods.
 
 >**Abstract**:
->Proteins are fundamental molecules performing diverse functions in living organisms. Protein engineering, the process of designing or modifying proteins to enhance or create new functions, has therefore become a research focus in the fields of biotechnology and medicine. A primary challenge in protein engineering is to efficiently discover and design new proteins with desired functions. Traditional approaches like directed evolution and rational design, though widely used, are limited by high computational costs and restricted exploration of potential protein structures. The recent success of generative models in efficiently synthesizing high-quality data across various domains has inspired researchers to investigate their potential applications in protein engineering. In this survey, we systematically summarize recent works on generative models for protein engineering, with a particular focus on protein design. Specifically, we categorize three main frameworks in existing generative protein design methods: sequence-based, structure-based, and joint sequence-structure generation. Besides, we provide a detailed review of representative generative models, including autoregressive models and diffusion models, and their application in protein sequence prediction and structure generation. Finally, we pinpoint existing challenges and propose future directions, such as leveraging large datasets, improving complex structure validation, and integrating advanced modeling techniques.
+>Proteins are fundamental molecules performing diverse functions in living organisms. Protein engineering, the process of designing or modifying proteins to enhance or create new functions, has therefore become a research focus in the fields of biotechnology and medicine. A primary challenge in protein engineering is to efficiently discover and design new proteins with desired functions. Traditional approaches like directed evolution and rational design, though widely used, are limited by high computational costs and restricted exploration of potential protein structures. The recent success of generative models in efficiently synthesizing high-quality data across various domains has inspired researchers to investigate their potential applications in protein engineering. In this survey, we systematically summarize recent works on generative models for protein engineering, with a particular focus on protein design. Specifically, we categorize three main frameworks in existing generative protein design methods: sequence-constrained, structure-constrained, and joint sequence-structure generation. Besides, we provide a detailed review of representative generative models, including autoregressive models and diffusion models, and their application in protein sequence prediction and structure generation. Finally, we pinpoint existing challenges and propose future directions, such as leveraging large datasets, improving complex structure validation, and integrating advanced modeling techniques.
 
 **We will continue to update this list with the newest resources. If you find any missed resources (paper/code) or errors, please feel free to open an issue or make a pull request.**
 
 ___
-## Task-oriented Classification
->**Sequence-based Protein Design**: Tasks that learn evolutionary relationships of protein sequences in multidimensional amino acid sequence space and generates new sequences, with or without functional/structural constraints, aiming to produce novel sequences with desired properties while satisfying given constraints.
+## Task-oriented Taxonomy
+>**Sequence-constrained Protein Design**: Tasks that learn evolutionary relationships of protein sequences in multidimensional amino acid sequence space and generates new sequences, with or without functional/structural constraints, aiming to produce novel sequences with desired properties while satisfying given constraints.
 >
->**Structure-based Protein Design**: Tasks that predict or generate protein sequences based on structural information, which can be either full sequence generation or sequence segment completion (inpainting), aiming to find amino acid sequences that match the given structural constraints.
+>**Structure-constrained Protein Design**: Tasks that predict or generate protein sequences based on structural information, which can be either full sequence generation or sequence segment completion (inpainting), aiming to find amino acid sequences that match the given structural constraints.
 >
 >**Joint Sequence-structure Generation**: Tasks that simultaneously generate protein sequences and structures as paired outputs to ensure their compatibility, which are essential for maintaining functional and structural correctness, particularly crucial in applications such as de novo design and drug discovery.
 
-**Sequence-based Protein Design Models**
+**Sequence-constrained Protein Design Models**
 | Publication  | Venue | Year | Resource |
 |:------|:----:|---------:|---------:|
 | Protgpt2 is a deep unsupervised language model for protein design | **Nature Communications** | 2022 | [\[paper\]](https://www.nature.com/articles/s41467-022-32007-7) [\[code\]](https://github.com/TeletcheaLab/protGPT2) |
@@ -30,7 +30,7 @@ ___
 | Protein Design by Sampling an Undirected Graphical Model of Residue Constraints | **IEEE-ACM Trans. Comput. Biol. Bioinform.** | 2008 | [\[paper\]](https://ieeexplore.ieee.org/document/4685894) |
 | Expanding functional protein sequence spaces using generative adversarial networks | **Nature Machine Intelligence** | 2021 | [\[paper\]](https://www.nature.com/articles/s42256-021-00310-5) [\[code\]](https://github.com/Biomatter-Designs/ProteinGAN) |
 
-**Structure-based Protein Design Models**
+**Structure-constrained Protein Design Models**
 | Publication  | Venue | Year | Resource |
 |:------|:----:|---------:|---------:|
 | Learning from Protein Structure with Geometric Vector Perceptrons | **ICLR** | 2020 | [\[paper\]](https://arxiv.org/abs/2009.01411) [\[code\]](https://github.com/drorlab/gvp) |
